@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.afinal.scrollRemedies">
+
+    <ImageView
+        android:id="@+id/remedies_image"
+        android:layout_width="448dp"
+        android:layout_height="263dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/home_remedies" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="408dp"
+        android:layout_height="501dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remedies_image"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/remedies_text"
+            android:layout_width="430dp"
+            android:layout_height="306dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="1. Cinnamon\n\n
+It contains a bioactive compound that can help to fight and prevent diabetes.
+Cinnamon is known to stimulate the insulin activity and thus regulate the blood sugar
+level. As excess of anything is bad, likewise cinnamon if taken in excess can increase
+the risk of liver damage due to a compound called coumarin present in it. The true
+cinnamon, not the one buy from shops (Cassia cinnamon) is safer to have.
+How to consume cinnamon
+- Mix half or one teaspoon of grounded cinnamon with warm water and have it once daily.
+- Boil raw cinnamon in 2 glasses of water. Let it cool for 30 minutes and have it daily.\n\n
+2. Aloe vera
+Aloe vera is easily found in Indian households. Though it is bitter in taste, but combing it with buttermilk
+makes it taste better. Usually, aloe vera is used for beauty purposes but as it has anti-inflammatory properties
+it can heal the wounds. Due to its anti-inflammatory properties, it is said to control the blood sugar levels.
+
+3. Jamun
+Jamun and its leaves have proven to be helpful in lowering the blood sugar levels. Consuming approximately 100
+grams of Jamun every day is said to show tremendous improvement in your blood sugar levels.
+
+4. Vitamin C
+Vitamin C is not only good for skin but also for diabetes. Recent studies have shown that consuming approximately
+600 mg of Vitamin C daily can improve the blood sugar level significantly. People who have chronic diabetes should
+consume foods rich in Vitamin C every day.
+
+
+
+3 ways to reduce your risk of diabetes
+1. Choose water as your primary beverage
+Sticking to water as your first choice of beverage helps you avoid other beverages that are loaded with sugar and preservatives.
+Sugary beverages have been linked with an increased risk of both type 2 diabetes and latent autoimmune diabetes of adults.
+
+2. Lose weight if you are overweight
+Though not everyone who develops type 2 diabetes is overweight or obese, but the majority of people are. Excess visceral fat
+promotes inflammation and insulin resistance, which significantly increases one's risk of diabetes.
+Losing even 10 per cent of your body weight reduces your risk of getting type 2 diabetes. The rule is the more you lose,
+the more benefits you will experience.
+
+3. Quit smoking
+Smoking has been linked to many serious health conditions. Studies have also shown that smoking and second-hand smoking exposes
+one to type 2 diabetes. Smoking increases the risk of diabetes by 44 per cent and people who smoke more than 20 cigarettes a day,
+their risk increases by 61 per cent."
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.014" />
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
